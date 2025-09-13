@@ -1,0 +1,4 @@
+-- hdd erasure algorithm (gutmann method?)
+-- ssd erasure algorithm (ata secure erase? idk)
+-- third party verification (?) integration
+-- wipe certificate generation

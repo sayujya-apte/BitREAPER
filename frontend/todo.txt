@@ -1,0 +1,4 @@
+-- create a frontend ig
+-- frontend is an independent application/executable
+-- frontend should make system calls that invoke the backend executable
+-- written in c/cpp & qt || python & pyqt5
