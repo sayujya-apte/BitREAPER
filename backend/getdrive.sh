@@ -5,5 +5,4 @@ if [ -f "$FILE" ]; then
 	rm -rf drives.csv	
 fi
 
-lsblk -dn -o NAME,SIZE,TYPE,TRAN | awk 'BEGIN {OFS = ", " }{ print $1, $2, $3, $4}' >> drives.csv
-
+lsblk -o NAME,TYPE,SIZE,TRAN,MOUNTPOINT --noheadings | awk '$2=="disk"{print "/dev/" $1 "," $2 "," $3 "," $4}' > drives.csv

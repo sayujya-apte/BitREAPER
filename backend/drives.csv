@@ -1,2 +1,1 @@
-sr0, 1024M, rom, usb
-vda, 32G, disk, virtio
+/dev/vda,disk,32G,virtio
