@@ -3,6 +3,7 @@
 while IFS=',' read -r NAME _ _ TYPE ROTA _; do
 	TYPE_TRIM=$(echo "$TYPE" | tr -d '\r\n' | xargs)
 	ROTA_TRIM=$(echo "$ROTA" | tr -d '\r\n' | xargs)
+	NAME_TRIM=$(echo "$NAME" | tr -d '\r\n' | xargs)
 	echo "NAME: $NAME, TYPE: $TYPE, ROTA: $ROTA"
 done < response.csv
 
@@ -17,7 +18,7 @@ if [ "$TYPE_TRIM" = "sata" ]; then
 elif [ "$TYPE_TRIM" = "nvme" ]; then
 	echo "test"
 elif [ "$TYPE_TRIM" = "usb" ]; then
-	echo "test1"
+	sudo shred -v -n 3 -z $NAME_TRIM
 fi
 
 
