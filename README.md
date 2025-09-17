@@ -14,4 +14,4 @@ BitREAPER :
 * Simple UI helps non-technical users operate the program easily.
 * Low-cost and portable, powered by FOSS tools.
 
-![program flowchart](https://github.com/sayujya-apte/BitREAPER/blob/2c6f9720930ccbec2e1b0bddddb6c5bc240a752e/fc2.png)
+![program flowchart](https://github.com/sayujya-apte/BitREAPER/blob/4ea5516d91ebe6999f0517d8977cc0bd2272af6f/flowchart.png)
